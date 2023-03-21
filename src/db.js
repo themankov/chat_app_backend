@@ -4,7 +4,7 @@ const { Pool } = pg;
 let localPoolConfig = {
   user: 'postgres12',
   password: 'aiA8uhfkxcwQq941VKJ47YSZqvOq7Grs',
-  host: '127.0.0.1',
+  host: 'dpg-cgctmnvdvk4htnq85da0-a',
   port: '5432',
   database: 'chat_app_mhxa',
 };
