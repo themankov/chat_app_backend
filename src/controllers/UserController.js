@@ -53,7 +53,7 @@ class UserController {
       next(e);
     }
   }
-  async logout(req, res) {
+  async logout(req, res,next) {
     try {
       const { refreshToken } = req.cookies;
       const token = await userService.logout(refreshToken);
