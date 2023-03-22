@@ -21,10 +21,10 @@ class UserController {
         fullname,
         password
       );
-      // res.cookie('refreshToken', userData.refreshToken, {
-      //   maxAge: 30 * 24 * 60 * 60,
-      //   httpOnly: true,
-      // });
+       res.cookie('refreshToken', userData.refreshToken, {
+         maxAge: 30 * 24 * 60 * 60,
+         httpOnly: true,
+      });
 
       return res.json(userData);
     } catch (e) {
